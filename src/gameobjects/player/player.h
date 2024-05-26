@@ -13,7 +13,11 @@ public:
     Player(Position initialPosition);
     ~Player();
 
-    MoveState move();
+    MoveState move(InputState action);
+
+    // To enhance gameplay, a player healing option has been added.
+    void heal(int amount);
+    int getHealPower();
     
     void render();
 };

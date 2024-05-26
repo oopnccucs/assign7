@@ -7,6 +7,7 @@
 #include "../gamecore/gamestate.h"
 #include "../gameobjects/room/room.h"
 #include "../gameobjects/player/player.h"
+#include "../gameprocess/gameprocess.h"
 #include "../gameprocess/gameprocessstate.h"
 
 using namespace GameState;
@@ -23,6 +24,12 @@ private:
 
     GameProcessState state;
 
+    GameProcessBase *currentProcess;
+
+    void roomChange(int roomIndex);
+
+    void stateChange(GameProcessState newState);
+
 public:
     Controller();
     ~Controller();
@@ -31,8 +38,6 @@ public:
     RunningState run(InputState action);
 
     void render();
-
-    void roomChange(int roomIndex);
 };
 
 #endif

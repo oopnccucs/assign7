@@ -5,40 +5,58 @@
 #include "../functions/position/position.h"
 #include "../functions/AnsiPrint/AnsiPrint.h"
 
+#include "../gameprocess/allgameprocess.h"
+
 Controller::Controller() {
     const int defaultRoomIndex = 0;
     RoomData roomData = ROOM_DATA[defaultRoomIndex];
+    Room *room = new Room(roomData);
+    rooms.insert(std::pair<int, Room *>(defaultRoomIndex, room));
+    currentRoomIndex = defaultRoomIndex;
+    player = new Player(roomData.playerInitialPosition);
 
-    // initialize class
+    state = PROCESS_MOVEMENT;
+    currentProcess = new Move(player, room);
+}
 
-
-    
+Controller::~Controller() {
+    for (size_t i = 0; i < rooms.size(); i++) {
+        delete rooms[i];
+    }
+    delete player;
 }
 
 RunningState Controller::run(InputState action) {
 
-    switch (state) {
-    case PROCESS_MOVEMENT: {
-        
-        // add your code to implement the enemy movement
-
-
-
-
-
-
-
-
-
-
-
-
-        break;
+    if(state == PROCESS_GAMEOVER) {
+        return EXIT;
     }
 
-    default:
-        break;
+    if(state == PROCESS_GAMECLEAR) {
+        return EXIT;
     }
+
+    ProcessInfo info = currentProcess->run(action);
+
+    // add your code to implement process control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     this->render();
 
@@ -63,32 +81,6 @@ RunningState Controller::run(InputState action) {
 
 // render
 void Controller::render() {
-    switch (state) {
-    case PROCESS_MOVEMENT:{
-        for (int y = 0; y < GAME_WINDOW_SIZE_Y; y++) {
-            for (int x = 0; x < GAME_WINDOW_SIZE_X; x++) {
-                if(player->getPosition() == Position(x, y)) {
-                    player->render();
-                    continue;
-                }
-                bool flag = false;
-                for(auto enemy : rooms[currentRoomIndex]->getEnemies()) {
-                    if(enemy->getPosition() == Position(x, y)) {
-                        enemy->render();
-                        flag = true;
-                        continue;
-                    }
-                }
-                if(flag) continue;
-                rooms[currentRoomIndex]->render(Position(x, y));
-            }
-            AnsiPrint("\n", nochange, nochange);
-        }
-        break;
-    }
-    
-    default:
-        break;
-    }
+    currentProcess->render();
     output();
 }

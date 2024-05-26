@@ -17,7 +17,7 @@ private:
 public:
     GameObject(Position initialPosition, int maxHealth, int attack, std::string name);
 
-    ~GameObject();
+    virtual ~GameObject();
 
     Position getPosition();
 
@@ -32,6 +32,8 @@ public:
     void hurt(int damage);
 
     std::string getName();
+
+    virtual void render() = 0;
 };
 
 #endif
