@@ -90,6 +90,7 @@ After these steps, the rendering part will be handled by the `render()` function
 - Add Process flow control logic to the `controller`.
 - Congratulations on completing all assignments for this semester!
 
+- Extra Bonus Factors: You can extend the game's structure, for example, by adding an opening scene, making battles more interesting, or incorporating a level system. Please describe any adjustments made to the game elements in the bonus.txt file. Additional points can be earned based on the functionality and completeness of the content.
 
 ## Sample Output
 
@@ -156,6 +157,10 @@ Game Clear
 | Complete GameOver and GameClear processes | 15 pt |
 | Implement MVC architecture using virtual class | 10 pt |
 | **Total** | **100 pt** |
+| Additional Game Design |	10 ~ 30 pt |
+| **Total** |	**130 pt** |
+
+Note: There are no restrictions on the bonus elements. Please describe further design for this game in the bonus.txt file. Extra points will be awarded based on the added content and its completeness.
 
 
 ## Assignment Directory

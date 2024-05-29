@@ -93,6 +93,7 @@ author: @organic_san at 2024/5/26
 - 在 `controller` 中加入 Process 的流程控制邏輯
 - 恭喜完成本學期的所有 assign 作業！
 
+- 額外加分要素：可以繼續延伸本遊戲的架構，例如加入遊戲開頭、戰鬥更有趣，或是等級系統等內容。請將對於遊戲要素進行的調整描述在bonus.txt中，可以依功能內容與完成度獲得額外的加分。
 
 ## Sample Output
 
@@ -159,6 +160,10 @@ author: @organic_san at 2024/5/26
 | 完成 GameOver 與 GameClear 的處理 | 15分 |
 | 使用 virtual class 實作 MVC 架構 | 10分 |
 | **合計** | **100分** |
+| 追加遊戲設計 | 10 ~ 30分 |
+| **合計** | **130分** |
+
+註：加分要素不限制內容，請將對於這個遊戲的進一步設計描述在bonus.txt中，將依新增內容與完成度給予額外加分。
 
 
 ## Assignment Directory
