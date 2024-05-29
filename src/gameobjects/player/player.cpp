@@ -4,6 +4,9 @@
 
 using namespace PlayerState;
 
+Player::Player(Position initialPosition): GameObject(initialPosition, 20, 2, "Player") {
+}
+
 // Add your code to implement the Player class here.
 
 
