@@ -181,22 +181,22 @@ or https://github.com/oopnccucs/assign7
 
 ## Files in the Assignment Directory
 
-src
-| -- gamecore: 輸入轉換處理與遊戲的流程呼叫
-|
-| -- functions
-|
-| -- controller*: 遊戲整體的流程控管
-|
-| -- gameobjects: 遊戲物件與房間的定義
-|
-| ---/_ gameprocess*: 將遊戲各個流程拆分成不同的執行個體
-|     | -- move*: 移動的處理
-|     | -- pause*: 暫停的處理
-|     | -- battle*: 戰鬥的處理
-|     | -- gameover*: 遊戲結束的處理
-|     | -- gameclear*: 遊戲過關的處理
-|
+src<br>
+| -- gamecore: 輸入轉換處理與遊戲的流程呼叫<br>
+|<br>
+| -- functions<br>
+|<br>
+| -- controller*: 遊戲整體的流程控管<br>
+|<br>
+| -- gameobjects: 遊戲物件與房間的定義<br>
+|<br>
+| ---/_ gameprocess*: 將遊戲各個流程拆分成不同的執行個體<br>
+|     | -- move*: 移動的處理<br>
+|     | -- pause*: 暫停的處理<br>
+|     | -- battle*: 戰鬥的處理<br>
+|     | -- gameover*: 遊戲結束的處理<br>
+|     | -- gameclear*: 遊戲過關的處理<br>
+|<br>
 
 *: 本次主要作業範圍
 

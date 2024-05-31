@@ -178,22 +178,22 @@ to submit the assignment.
 
 ## Files in the Assignment Directory
 
-src
-| -- gamecore: input conversion processing and game process calls
-|
-| -- functions
-|
-| -- controller*: Overall game flow control
-|
-| -- gameobjects: game objects and room definitions
-|
-| ---/_ gameprocess*: split game processes into different instances
-|     | -- move*: handling movement
-|     | -- pause*: handling pause
-|     | -- battle*: handling battles
-|     | -- gameover*: handling game over
-|     | -- gameclear*: handling game clear
-|
+src<br>
+| -- gamecore: input conversion processing and game process calls<br>
+|<br>
+| -- functions<br>
+|<br>
+| -- controller*: Overall game flow control<br>
+|<br>
+| -- gameobjects: game objects and room definitions<br>
+|<br>
+| ---/_ gameprocess*: split game processes into different instances<br>
+|     | -- move*: handling movement<br>
+|     | -- pause*: handling <br>
+|     | -- battle*: handling battles<br>
+|     | -- gameover*: handling game over<br>
+|     | -- gameclear*: handling game clear<br>
+|<br>
 
 *: Main focus of this assignment
 
