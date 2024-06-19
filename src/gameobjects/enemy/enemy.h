@@ -13,6 +13,7 @@ public:
     Enemy(Position initialPosition, int health, int attack, std::string name, bool isLastBoss);
     virtual ~Enemy();
 
+    // return the next position of the enemy that will be moved
     virtual Position nextPosition() = 0;
 
     virtual void move(InputState action) = 0;

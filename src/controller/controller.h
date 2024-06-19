@@ -26,8 +26,10 @@ private:
 
     GameProcessBase *currentProcess;
 
+    // control about room change and current room
     void roomChange(int roomIndex);
 
+    // handle the state change of the game process
     void stateChange(GameProcessState newState);
 
 public:

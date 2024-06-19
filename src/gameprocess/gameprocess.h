@@ -15,6 +15,7 @@ public:
     GameProcessBase();
     virtual ~GameProcessBase();
 
+    // the only function that calls the process running
     virtual ProcessInfo run(InputState action) = 0;
 
     virtual void render() = 0;

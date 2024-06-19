@@ -13,6 +13,7 @@ namespace GameProcess
     };
 
     enum ProcessInfo {
+        // continue with the current process
         CONTINUE,
         
         MOVE_FINISH_ROOMCHANGE_LEFT,

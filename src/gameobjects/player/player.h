@@ -13,6 +13,7 @@ public:
     Player(Position initialPosition);
     ~Player();
 
+    // move player to the position and return move result to determine the next state
     MoveState move(InputState action);
 
     // To enhance gameplay, a player healing option has been added.
